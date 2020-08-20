@@ -1,7 +1,7 @@
 var baseItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/white_item_r.png";
 var redItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/red_item_r.png"
 var blueItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/blue_item_r.png";
-var greenItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/green_item_r.png";
+var greenItemImage = "https://uploads-ssl.webflow.com/5e4dd70c09d48fd33df2de2f/5f3dc58aa1d49f2a62ffd936_green_item_r.png";
 var purpleItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/purple_item_r.png";
 var whiteItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/white_item_r.png";
 
