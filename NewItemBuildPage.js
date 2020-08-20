@@ -48,41 +48,52 @@ clearButton.addEventListener("click", function(){
     clearInventory();
 });
 
-favorField1.addEventListener("keyup", function(event) {
-    if(event.keyCode !== 13) return;
+favorField1.addEventListener("keyup", function (event) {
+    if (event.keyCode !== 13) return;
     let value = Number.parseInt(favorField1.value);
-    
-    if(Number.isNaN(value)){
+
+    if (Number.isNaN(value)) {
         favorField1.value = "1";
         value = 1;
     }
-    else{
+
+    else if (value < 0) {
+        favorField1.value = "0";
+        value = 0;
+    }
+
+    else {
         build.hero.aspect1.favor = value;
     }
     build.updateAttributes();
-        
+
     updatePage();
 
-    
+
 });
 
-favorField2.addEventListener("keyup", function(event) {
-    if(event.keyCode !== 13) return;
+favorField2.addEventListener("keyup", function (event) {
+    if (event.keyCode !== 13) return;
     let value = Number.parseInt(favorField2.value);
-    
-    if(Number.isNaN(value)){
+
+    if (Number.isNaN(value)) {
         favorField2.value = "1";
         value = 1;
     }
-    else{
+
+    else if (value < 0) {
+        favorField2.value = "0";
+        value = 0;
+    }
+    else {
         build.hero.aspect2.favor = value;
     }
 
     build.updateAttributes();
-        
+
     updatePage();
 
-    
+
 });
 
 levelValue.addEventListener("keyup", function(event) {
@@ -619,9 +630,15 @@ function incrementFavor1(){
     updatePage();   
 }
 
-function decrementFavor1(){
-    build.hero.aspect1.favor--;
-    
+function decrementFavor1() {
+    if (build.hero.aspect1.favor <= 0) {
+        build.hero.aspect1.favor = 0;
+    }
+    else {
+        build.hero.aspect1.favor--;
+    }
+
+
     build.updateAttributes();
     updatePage();
 }
@@ -635,9 +652,16 @@ function incrementFavor2(){
     updatePage();
 }
 
-function decrementFavor2(){
-    build.hero.aspect2.favor--;
-    
+function decrementFavor2() {
+    if (build.hero.aspect2.favor <= 0) {
+        build.hero.aspect2.favor = 0;
+
+    }
+
+    else {
+        build.hero.aspect2.favor--;
+    }
+
     build.updateAttributes();
     updatePage();
 }
