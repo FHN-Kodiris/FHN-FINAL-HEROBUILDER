@@ -1,9 +1,9 @@
-var baseItemImage = "images/white_item_r.png";
-var redItemImage = "images/red_item_r.png"
-var blueItemImage = "images/blue_item_r.png";
-var greenItemImage = "images/green_item_r.png";
-var purpleItemImage = "images/purple_item_r.png";
-var whiteItemImage = "images/white_item_r.png";
+var baseItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/white_item_r.png";
+var redItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/red_item_r.png"
+var blueItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/blue_item_r.png";
+var greenItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/green_item_r.png";
+var purpleItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/purple_item_r.png";
+var whiteItemImage = "https://cdn.jsdelivr.net/gh/FHN-Kodiris/FHN-FINAL-HEROBUILDER/images/white_item_r.png";
 
 class ItemContainer{
     constructor(container, itemName, image){
